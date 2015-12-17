@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+       <meta charset="utf-8" />
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Register</title>
+        
+        <link href="template/assets/css/bootstrap.min.css" rel="stylesheet" />
+    
+        
+    </h:head>
+    <h:body>
+
+       
+       <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Please Sign In</h3>
+                    </div>
+                    <div class="panel-body">
+                        
+                        <h:form role="form">
+                            <p:growl id="growl" showDetail="true" sticky="true" />  
+                            <fieldset>
+                              <div class="form-group">
+                                    <p:outputLabel for="usr" value="UserName" class="hidden"></p:outputLabel>
+                                    <p:inputText id="usr" class="form-control" placeholder="UserName" value="#{registerController.model.name}" required="true"></p:inputText>
+                                </div>
+                                <div class="form-group">
+                                    <p:outputLabel for="pass" value="login:" class="hidden"></p:outputLabel>
+                                    <p:inputText id="pass" class="form-control" placeholder="Login" value="#{registerController.model.login}" required="true"></p:inputText>
+                                </div>
+                                <div class="form-group">
+                                    <p:outputLabel for="pass" value="password:" class="hidden"></p:outputLabel>
+                                    <p:inputText id="name" class="form-control" placeholder="Password" type="password" value="#{registerController.model.password}" required="true"></p:inputText>
+                                </div>
+                              
+                          
+                                <p:commandButton class="btn btn-lg btn-success btn-block" value="Register" action="#{registerController.register}" update="growl"></p:commandButton>
+                            </fieldset>
+                        </h:form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+        
+        
+    </h:body>
+</html>
+
+
+<!--
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+       <meta charset="utf-8" />
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Login</title>
+        
+        <link href="template/assets/css/bootstrap.min.css" rel="stylesheet" />
+    
+        
+    </h:head>
+    <h:body>
+        
+       <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Please Sign In</h3>
+                    </div>
+                    <div class="panel-body">
+                        
+                        <h:form role="form">
+                            <p:growl id="growl" showDetail="true" sticky="true" />  
+                            <fieldset>
+                                <div class="form-group">
+                                    <p:outputLabel for="usr" value="UserName" class="hidden"></p:outputLabel>
+                                    <p:inputText id="usr" class="form-control" placeholder="UserName" value="#{loginControllerA.model.login}" required="true"></p:inputText>
+                                </div>
+                                <div class="form-group">
+                                    <p:outputLabel for="pass" value="password:" class="hidden"></p:outputLabel>
+                                    <p:inputText id="pass" class="form-control" placeholder="Password" type="password" value="#{loginControllerA.model.password}" required="true"></p:inputText>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                     
+                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me</input>
+                                    </label>
+                                </div>
+                          
+                                <p:commandButton class="btn btn-lg btn-success btn-block" value="Login" action="#{loginControllerA.loginUser}" update="growl"></p:commandButton>
+                            </fieldset>
+                        </h:form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+        
+        
+    </h:body>
+</html>-->

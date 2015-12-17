@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+       <meta charset="utf-8" />
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Register</title>
+        
+        <link href="template/assets/css/bootstrap.min.css" rel="stylesheet" />
+        	
+	    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'></link>
+	    <!-- <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700' rel='stylesheet' type='text/css'> -->
+	    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'></link>
+	    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600' rel='stylesheet' type='text/css'></link>
+	    
+	    
+		<link rel="stylesheet" type="text/css" href="template/assets/css/animate.css"></link>
+		<link rel="stylesheet" type="text/css" href="template/assets/css/bootstrap.min.css"></link>
+		<link rel="stylesheet" type="text/css" href="template/assets/css/owl.carousel.css"></link>
+		<link rel="stylesheet" type="text/css" href="template/assets/css/owl.theme.css"></link>
+		<link rel="stylesheet" type="text/css" href="template/assets/css/owl.transitions.css"></link>
+		<link rel="stylesheet" type="text/css" href="template/assets/css/font-awesome.min.css"></link>
+		<link rel="stylesheet" type="text/css" href="template/assets/css/main.css"></link>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'></link>
+    
+        
+    </h:head>
+    <h:body>
+      <section class="contact-content">
+			<div class="container">
+				<div class="row">
+					
+
+					<div class="col-md-5 col-md-offset-4">
+						<div class= "appointment">
+							
+		                    <div class="header text-center">
+		                        <h2>Register</h2>
+		                       	
+		                    </div>
+
+							
+							<div class="row">
+								<form method="post" action="#">
+									<div class= "form">
+                                                                            <div class="panel-body">
+                                                                            <h:form role="form">
+                            <p:growl id="growl" showDetail="true" sticky="true" />  
+                            <fieldset>
+
+                                                                            <div class="input-group margin-bottom-sm col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                                                                                <p:outputLabel for="usr" value="UserName" class="hidden"></p:outputLabel>
+                                    <p:inputText id="usr" class="form-control" placeholder="UserName" value="#{registerController.model.name}" required="true"></p:inputText>
+                                </div>
+                                <div class="input-group margin-bottom-sm col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                                    <p:outputLabel for="pass" value="login:" class="hidden"></p:outputLabel>
+                                    <p:inputText id="pass" class="form-control" placeholder="Login" value="#{registerController.model.login}" required="true"></p:inputText>
+                                </div>
+                               <div class="input-group margin-bottom-sm col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                                    <p:outputLabel for="pass" value="password:" class="hidden"></p:outputLabel>
+                                    <p:inputText id="name" class="form-control" placeholder="Password" type="password" value="#{registerController.model.password}" required="true"></p:inputText>
+                                </div>
+                                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                                          <p:commandButton class="btn btn-primary send" value="Register" action="#{registerController.register}" update="growl"></p:commandButton>                            
+                                </div>			
+                            </fieldset>
+                        </h:form>
+									</div>
+                                                                    </div>
+                      
+                                                                    
+                              
+								</form>
+							</div>
+							
+						</div> 
+					</div>
+				</div>
+			</div>
+		</section>
+
+            <section class="contact-content"></section>
+		<section id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<ul class="text-center contact">
+				        	<li class= "socials-icons">
+								<a href="#" data-toggle="tooltip" title="Share in Facebook" class="facebook"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li class= "socials-icons">
+								<a href="#" data-toggle="tooltip" title="Share in Twitter" class="twitter"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li class= "socials-icons">
+								<a href="#" data-toggle="tooltip" title="Share in Google +" class="google-plus"><i class="fa fa-google-plus"></i></a>
+							</li>
+							<li class= "socials-icons">
+								<a href="#" data-toggle="tooltip" title="Share in Instagram" class="instagram"><i class="fa fa-instagram"></i></a>
+							</li>
+							<li class= "socials-icons">
+								<a href="#" data-toggle="tooltip" title="Share in Pinterest" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							</li>
+							<li class= "socials-icons">
+								<a href="#" data-toggle="tooltip" title="Connect with Skype" class="skype"><i class="fa fa-skype"></i></a>
+							</li>
+				      	</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copy-right-text text-center">
+							 Copyright 2014, Your Website Link. Theme by <a href="https://themewagon.com/">ThemeWagon</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<script type="template/text/javascript" src="assets/js/jquery.min.js"></script>
+		<script type="template/text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+		<script type="template/text/javascript" src="assets/js/wow.min.js"></script>
+		<script type="template/text/javascript" src="assets/js/bootstrap.min.js"></script>
+	
+		
+		<script>
+	      function initialize() {
+	        var mapCanvas = document.getElementById('map-canvas');
+	        
+	    </script>
+
+		<script>
+      		new WOW().init();
+		</script>
+
+
+       
+
+        
+        
+        
+    </h:body>
+</html>
+
+
+

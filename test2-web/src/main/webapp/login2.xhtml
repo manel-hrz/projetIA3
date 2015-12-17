@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+       <meta charset="utf-8" />
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Login</title>
+        
+        <link href="template/assets/css/bootstrap.min.css" rel="stylesheet" />
+    
+        
+    </h:head>
+    <h:body>
+        
+<!--       <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Please Sign In</h3>
+                    </div>
+                    <div class="panel-body">
+                        
+                        <h:form role="form">
+                          
+                            <fieldset>
+                                <div class="form-group">
+                                    <p:outputLabel for="usr" value="UserName" class="hidden"></p:outputLabel>
+                                    <p:inputText id="usr" class="form-control" placeholder="UserName" value="#{loginControllerA.model.login}" required="true"></p:inputText>
+                                </div>
+                                <div class="form-group">
+                                    <p:outputLabel for="pass" value="password:" class="hidden"></p:outputLabel>
+                                    <p:inputText id="pass" class="form-control" placeholder="Password" type="password" value="#{loginControllerA.model.password}" required="true"></p:inputText>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                     
+                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me</input>
+                                    </label>
+                                </div>
+                          
+                                <p:commandButton class="btn btn-lg btn-success btn-block" value="Login" action="#{loginControllerA.loginUser}" update="growl"></p:commandButton>
+                            </fieldset>
+                        </h:form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+       
+								<div class="row">
+									<form method="post" action="#">
+										<div class= "form">
+											<div class="input-group margin-bottom-sm col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+											 	<p:inputText  id="usr" class="form-control" type="text" placeholder="UserName" required="true"></p:inputText>
+											</div>
+											<div class="input-group margin-bottom-sm col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+											 	<p:inputText id="pass" class="form-control" type="text" placeholder="Login" value="#{loginControllerA.model.password}" required="true"></p:inputText>
+											</div>
+											
+											
+										</div>
+										
+										<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+<!--											<div class="captcha-container">
+			                                    <label>Are you human? </label><br/>
+			                                    <img src="http://inspirythemesdemo.com/healthpress/wp-content/themes/healthpress-theme/captcha/captcha.php" alt="">
+			                                    <input type="text" class="captcha required" name="captcha" maxlength="5" title=" Please enter the code characters displayed in image!">
+			                                </div>-->
+											
+                                                                                             <p:commandButton class="btn btn-primary send" value="Login" action="#{loginControllerA.loginUser}" update="growl"></p:commandButton>
+										</div>
+									</form>
+								</div>
+							
+        
+     
+
+		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="assets/js/wow.min.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+ 
+    </h:body>
+</html>
